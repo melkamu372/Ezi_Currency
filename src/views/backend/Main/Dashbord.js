@@ -1,7 +1,9 @@
 import React from 'react'
 import 'react-circular-progressbar/dist/styles.css';
-import { Card,Container,Row,Col,Dropdown,Collapse,Tab,Nav,Image } from 'react-bootstrap';
+import { Card,Container,Row,Col,Dropdown,Collapse,Tab,Nav,Image,Navbar,minisidbar,Button } from 'react-bootstrap';
 import RateTable from './rateTable'
+//import ChangeMode from  '../../../Change-Mode'
+
 const Dashbord = () => {
     const formattedDate = new Date().toLocaleDateString('en-US', {
         month: 'short',
@@ -9,18 +11,25 @@ const Dashbord = () => {
         year: 'numeric',
       });
     return (
-        <Container fluid>
-            <Row>
-          <Col md="12" className="mb-4 mt-1">
+ <>
+<div className="mb-5 iq-top-navbar ">
+    <div className="iq-navbar-custom">
+        <Navbar  expand="lg" className="navbar-light p-0">
+            <Col md="12" className="mb-4 mt-3">
           <div className="d-flex flex-wrap justify-content-center align-items-center">
         <h5 className="font-weight-bold text-center">
           {formattedDate} Foreign Exchange Market Rates for Major Currencies Against Ethiopian BIRR (ETB)
         </h5>
       </div>
-            </Col>
-<Col md="12" className="mb-4 mt-1">
-<Tab.Container defaultActiveKey="USD">
-   <Nav variant="pills mb-3" fill>
+      </Col>
+        </Navbar>
+    </div>
+</div>
+<Container fluid className="mt-5">
+<Row className="mt-5">
+<Col md="12" className="mt-5">
+<Tab.Container defaultActiveKey="USD" className="mt-5">
+   <Nav variant="pills mb-5" fill>
       <Nav.Item>
          <Nav.Link eventKey="USD">
         <Card className="text-center">
@@ -181,7 +190,7 @@ const Dashbord = () => {
 </Col>
 </Row>
 </Container>
-    )
+</>
+    ) 
 }
-
 export default Dashbord;

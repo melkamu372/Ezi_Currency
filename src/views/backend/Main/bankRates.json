@@ -186,6 +186,7 @@
     {
       "id": 14,
       "name": "Hibret Bank",
+      "logo": "hibret",
       "currencies": [
         { "id": 0, "name": "USD", "icon": "🇺🇸", "buy": 74.7364, "sell": 76.2311 },
         { "id": 1, "name": "EUR", "icon": "🇪🇺", "buy": 81.0367, "sell": 82.6574 },
@@ -199,6 +200,7 @@
     {
       "id": 15,
       "name": "Lion Bank",
+      "logo": "lion",
       "currencies": [
         { "id": 0, "name": "USD", "icon": "🇺🇸", "buy": 74.7364, "sell": 76.2311 },
         { "id": 1, "name": "EUR", "icon": "🇪🇺", "buy": 81.0367, "sell": 82.6574 },
@@ -212,6 +214,7 @@
     {
       "id": 16,
       "name": "Hijra Bank",
+      "logo": "hijra",
       "currencies": [
         { "id": 0, "name": "USD", "icon": "🇺🇸", "buy": 74.7364, "sell": 76.2311 },
         { "id": 1, "name": "EUR", "icon": "🇪🇺", "buy": 81.0367, "sell": 82.6574 },
@@ -225,6 +228,7 @@
     {
       "id": 17,
       "name": "Oromia Bank",
+      "logo": "oromia",
       "currencies": [
         { "id": 0, "name": "USD", "icon": "🇺🇸", "buy": 74.7364, "sell": 76.2311 },
         { "id": 1, "name": "EUR", "icon": "🇪🇺", "buy": 81.0367, "sell": 82.6574 },
@@ -238,6 +242,7 @@
     {
       "id": 18,
       "name": "Nib Bank",
+      "logo": "nib",
       "currencies": [
         { "id": 0, "name": "USD", "icon": "🇺🇸", "buy": 74.7364, "sell": 76.2311 },
         { "id": 1, "name": "EUR", "icon": "🇪🇺", "buy": 81.0367, "sell": 82.6574 },
@@ -251,6 +256,7 @@
     {
       "id": 19,
       "name": "Siinqee Bank",
+      "logo": "siinqee",
       "currencies": [
         { "id": 0, "name": "USD", "icon": "🇺🇸", "buy": 74.7364, "sell": 76.2311 },
         { "id": 1, "name": "EUR", "icon": "🇪🇺", "buy": 81.0367, "sell": 82.6574 },
@@ -265,6 +271,8 @@
     {
         "id": 20,
         "name": "Shabelle Bank",
+
+        "logo": "shabel",
         "currencies": [
           { "id": 0, "name": "USD", "icon": "🇺🇸", "buy": 74.7364, "sell": 76.2311 },
           { "id": 1, "name": "EUR", "icon": "🇪🇺", "buy": 81.0367, "sell": 82.6574 },
@@ -279,6 +287,7 @@
       {
         "id": 21,
         "name": "Tsehay Bank",
+        "logo": "tsehay",
         "currencies": [
           { "id": 0, "name": "USD", "icon": "🇺🇸", "buy": 74.7364, "sell": 76.2311 },
           { "id": 1, "name": "EUR", "icon": "🇪🇺", "buy": 81.0367, "sell": 82.6574 },
@@ -293,6 +302,7 @@
       {
         "id": 22,
         "name": "Tsedey Bank",
+        "logo": "tsedey",
         "currencies": [
           { "id": 0, "name": "USD", "icon": "🇺🇸", "buy": 74.7364, "sell": 76.2311 },
           { "id": 1, "name": "EUR", "icon": "🇪🇺", "buy": 81.0367, "sell": 82.6574 },
@@ -307,6 +317,7 @@
       {
         "id": 23,
         "name": "Wegagen Bank",
+        "logo": "wegagen",
         "currencies": [
           { "id": 0, "name": "USD", "icon": "🇺🇸", "buy": 74.7364, "sell": 76.2311 },
           { "id": 1, "name": "EUR", "icon": "🇪🇺", "buy": 81.0367, "sell": 82.6574 },
@@ -321,6 +332,7 @@
       {
         "id": 24,
         "name": "ZamZam Bank",
+        "logo": "zamzam",
         "currencies": [
           { "id": 0, "name": "USD", "icon": "🇺🇸", "buy": 74.7364, "sell": 76.2311 },
           { "id": 1, "name": "EUR", "icon": "🇪🇺", "buy": 81.0367, "sell": 82.6574 },
@@ -335,6 +347,7 @@
       {
         "id": 12,
         "name": "Zemen Bank",
+        "logo": "zemen",
         "currencies": [
           { "id": 0, "name": "USD", "icon": "🇺🇸", "buy": 74.7364, "sell": 76.2311 },
           { "id": 1, "name": "EUR", "icon": "🇪🇺", "buy": 81.0367, "sell": 82.6574 },

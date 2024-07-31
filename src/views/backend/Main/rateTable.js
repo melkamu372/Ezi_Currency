@@ -17,14 +17,22 @@ import coop from '../../../assets/coop.png';
 import enat from '../../../assets/enat.png';
 import dashen from '../../../assets/dashen.png';
 import gedda from '../../../assets/gada.png';
+import hibret from '../../../assets/hibret.png';
+import lion from '../../../assets/lion.png';
+import hijra from '../../../assets/hijira.png';
+import oromia from '../../../assets/oromia.png';
+import nib from '../../../assets/nib.png';
+import siinqee from '../../../assets/siinquee.png';
+import shabel from '../../../assets/shabel.png';
+import tsehay from '../../../assets/tsehay.png';
+import tsedey from '../../../assets/tsedey.png';
+import wegagen from '../../../assets/wegagen.png';
+import zamzam from '../../../assets/zamzam.png';
+import zemen from '../../../assets/zemen.png';
 const logoMap = {
-  cbe,
-  amara,
-  ahadu,
-  addis,
-  abay,
-  awash,
-  abyssinia,birhan, buna,coop,enat,dashen,gedda
+  cbe,amara,ahadu,addis,abay,awash,abyssinia,birhan, 
+  buna,coop,enat,dashen,gedda,hibret,lion,hijra,oromia,
+  nib,siinqee,shabel,tsehay,tsedey,wegagen,zemen,zamzam
 };
 
 const RateTable = ({ currency = 'USD' }) => {
