@@ -16,7 +16,7 @@ import buna from '../../../assets/buna.png';
 import coop from '../../../assets/coop.png';
 import enat from '../../../assets/enat.png';
 import dashen from '../../../assets/dashen.png';
-//import awash from '../../../assets/awsh.png';
+import gedda from '../../../assets/gada.png';
 const logoMap = {
   cbe,
   amara,
@@ -24,7 +24,7 @@ const logoMap = {
   addis,
   abay,
   awash,
-  abyssinia,birhan, buna,coop,enat,dashen
+  abyssinia,birhan, buna,coop,enat,dashen,gedda
 };
 
 const RateTable = ({ currency = 'USD' }) => {
