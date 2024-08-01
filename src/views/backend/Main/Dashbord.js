@@ -12,19 +12,19 @@ const Dashbord = () => {
       });
     return (
  <>
-<div className="mb-5 iq-top-navbar ">
-    <div className="iq-navbar-custom">
-        <Navbar  expand="lg" className="navbar-light p-0">
-            <Col md="12" className="mb-4 mt-3">
-          <div className="d-flex flex-wrap justify-content-center align-items-center">
-        <h5 className="font-weight-bold text-center">
-          {formattedDate} Foreign Exchange Market Rates for Major Currencies Against Ethiopian BIRR (ETB)
-        </h5>
-      </div>
-      </Col>
-        </Navbar>
-    </div>
-</div>
+ <div className="mb-5 iq-top-navbar w-100">
+                <div className="iq-navbar-custom w-100">
+                    <Navbar expand="lg" className="navbar-light p-0 w-100">
+                        <Col md="12" className="mb-4 mt-3 w-100">
+                            <div className="d-flex flex-wrap justify-content-center align-items-center w-100">
+                                <h5 className="font-weight-bold text-center w-100">
+                                    {formattedDate} Foreign Exchange Market Rates for Major Currencies Against Ethiopian BIRR (ETB)
+                                </h5>
+                            </div>
+                        </Col>
+                    </Navbar>
+                </div>
+            </div>
 <Container fluid className="mt-5">
 <Row className="mt-5">
 <Col md="12" className="mt-5">

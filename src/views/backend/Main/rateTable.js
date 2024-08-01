@@ -1,8 +1,9 @@
-import React from 'react';
+
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Dropdown } from 'react-bootstrap';
 import Card from '../../../components/Card';
 import bankRates from './bankRates.json'; // Import the JSON data
-
+import { get_currency } from '../../../services/currenyApi';
 // Import images
 import cbe from '../../../assets/cbe.png';
 import amara from '../../../assets/amara.png';
@@ -36,6 +37,28 @@ const logoMap = {
 };
 
 const RateTable = ({ currency = 'USD' }) => {
+  const [bankRates, setBankRates] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await get_currency();
+        setBankRates(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <Container fluid>
       <Row>

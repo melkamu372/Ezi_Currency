@@ -1,6 +1,6 @@
 {
-  "name": "code-react",
-  "homepage": "https://melkamu372.github.io/Ezi_Currency/",
+  "name": "ezi-currency",
+  "homepage": "https://melkamu372.github.io/ezi-currency",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +10,7 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "apexcharts": "^3.26.3",
+    "axios": "^1.7.2",
     "bootstrap": "^4.6.0",
     "dragula": "^3.7.3",
     "highcharts": "^9.1.0",
@@ -45,7 +46,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -64,6 +67,7 @@
     "last 1 safari version"
   ],
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "vanillajs-datepicker": "^1.1.4"
   }
 }
