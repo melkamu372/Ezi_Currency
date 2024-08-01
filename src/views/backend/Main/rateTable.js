@@ -1,9 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
-import { Container, Row, Col, Dropdown } from 'react-bootstrap';
+import { Container, Row, Col, Dropdown,Table} from 'react-bootstrap';
 import Card from '../../../components/Card';
-import bankRates from './bankRates.json'; // Import the JSON data
-import { get_currency } from '../../../services/currenyApi';
+import {get_currency_rate} from '../../../services/currenyApi';
 // Import images
 import cbe from '../../../assets/cbe.png';
 import amara from '../../../assets/amara.png';
@@ -36,14 +35,18 @@ const logoMap = {
   nib,siinqee,shabel,tsehay,tsedey,wegagen,zemen,zamzam
 };
 
-const RateTable = ({ currency = 'USD' }) => {
+const RateTable = ({ currency = 'USD',name='US Dollar', day=new Date() }) => {
   const [bankRates, setBankRates] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  const formattedDate = day.toLocaleDateString('en-US', {
+    month: 'short',
+    day: '2-digit',
+    year: 'numeric',
+  });
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await get_currency();
+        const data = await get_currency_rate();
         setBankRates(data);
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -67,7 +70,7 @@ const RateTable = ({ currency = 'USD' }) => {
             <Card.Header className="d-flex justify-content-between">
               <div className="header-title">
                 <h5 className="card-title">
-                  {currency} Exchange Market Rates In Ethiopian Banks Against Ethiopian BIRR (ETB)
+                  {formattedDate} {name} Exchange Market Rates In Ethiopian Banks Against Ethiopian BIRR (ETB)
                 </h5>
               </div>
               <div className="card-header-toolbar d-flex align-items-center">
@@ -102,8 +105,8 @@ const RateTable = ({ currency = 'USD' }) => {
               </div>
             </Card.Header>
             <Card.Body className="p-0">
-              <div className="table-responsive">
-                <table className="table mb-0">
+              <div className="table-responsive"  >
+              <Table striped size="sm"  className="table mb-0">
                   <thead className="table-color-heading">
                     <tr className="text-secondary">
                       <th scope="col">Bank</th>
@@ -120,14 +123,14 @@ const RateTable = ({ currency = 'USD' }) => {
                         bank.currencies
                           .filter(currencyData => currencyData.name === currency)
                           .map((currencyData, currencyIndex) => (
-                            <tr className="white-space-no-wrap" key={`${index}-${currencyIndex}`}>
+                            <tr key={`${index}-${currencyIndex}`}>
                               <td>
                                 <div className="d-flex align-items-center">
-                                  <div className="avatar-45 mr-2">
+                                  <div className="avatar-45">
                                     <img
                                       src={logoMap[bank.logo]}
                                       className="img-fluid rounded-circle"
-                                      alt={bank.name}
+                                      alt={bank.name} style={{ width: '80%', height: '80%' }}
                                     />
                                   </div>
                                   <div>{bank.name}</div>
@@ -141,7 +144,7 @@ const RateTable = ({ currency = 'USD' }) => {
                           ))
                       )}
                   </tbody>
-                </table>
+                </Table>
               </div>
             </Card.Body>
           </Card>
